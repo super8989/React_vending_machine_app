@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import VendingMachine from "./VendingMachine";
+import Chips from "./Chips";
 import "./App.css";
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
 		return (
 			<div className='App'>
 				<VendingMachine />
+				<Chips />
 			</div>
 		);
 	}
