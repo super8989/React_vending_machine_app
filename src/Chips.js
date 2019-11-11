@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+
+import Message from "./Message";
+
 import chipsImg from "./img/Chips.png";
 import { Link } from "react-router-dom";
 
@@ -33,11 +36,16 @@ class Chips extends Component {
 		));
 		return (
 			<div className='Chips'>
-				<h1>Bags eaten: {this.state.bags.length}</h1>
-				<button onClick={this.handleClick}>nom nom nom</button>
-				<Link exact to='/'>
-					Go Back
-				</Link>
+				<Message>
+					<h1>Bags eaten: {this.state.bags.length}</h1>
+					<button onClick={this.handleClick}>nom nom nom</button>
+					<h1>
+						<Link exact to='/'>
+							Go Back
+						</Link>
+					</h1>
+				</Message>
+
 				{bags}
 			</div>
 		);
