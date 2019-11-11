@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import chipsImg from "./img/Chips.png";
+import { Link } from "react-router-dom";
 
 import "./Chips.css";
 
@@ -34,6 +35,9 @@ class Chips extends Component {
 			<div className='Chips'>
 				<h1>Bags eaten: {this.state.bags.length}</h1>
 				<button onClick={this.handleClick}>nom nom nom</button>
+				<Link exact to='/'>
+					Go Back
+				</Link>
 				{bags}
 			</div>
 		);
