@@ -15,15 +15,21 @@ class VendingMachine extends Component {
 					<h1>I am a vending maching. What would you like?</h1>
 				</Message>
 				<Message>
-					<Link exact to='/soda'>
-						Soda
-					</Link>
-					<Link exact to='/chips'>
-						Chips
-					</Link>
-					<Link exact to='/sardines'>
-						Sardines
-					</Link>
+					<h1>
+						<Link exact to='/soda'>
+							Soda
+						</Link>
+					</h1>
+					<h1>
+						<Link exact to='/chips'>
+							Chips
+						</Link>
+					</h1>
+					<h1>
+						<Link exact to='/sardines'>
+							Sardines
+						</Link>
+					</h1>
 				</Message>
 			</div>
 		);
